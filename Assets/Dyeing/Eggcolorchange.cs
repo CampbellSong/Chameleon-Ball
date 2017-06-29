@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Eggcolorchange : MonoBehaviour {
     //public GameObject ball;
-    public MeshRenderer ballRendere;
     public Color _color;
 	// Use this for initialization
 	void Start () {
@@ -16,11 +15,11 @@ public class Eggcolorchange : MonoBehaviour {
 		
 	}
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider collision)
     {
         Debug.Log("111");
-        if (ballRendere.material.color != this._color) {
-            ballRendere.material.color = this._color;
+        if (collision.gameObject.GetComponent<Renderer>().material.color != this._color) {
+            collision.gameObject.GetComponent<Renderer>().material.color = this._color;
         }
     }
 }
