@@ -6,7 +6,8 @@ public class REDScript : MonoBehaviour {
     public Color _color;
     public GameObject ball;
     public MeshRenderer meshRenderer;
-    public MeshRenderer ballRenderer;
+    public GameObject destory;
+    //public MeshRenderer ballRenderer;
     public Light light;
     public Camera camera;
     bool _bSwitch=false;
@@ -36,11 +37,15 @@ public class REDScript : MonoBehaviour {
         }
 }
     
-    private void OnTriggerStay(Collider collision)
+    private void OnTriggerStay(Collider other)
     {
-        if (ballRenderer.material.color != meshRenderer.material.color)
+        if (other.gameObject.GetComponent<Renderer>().material.color != meshRenderer.material.color)
         {
-            Destroy(ball, 0.1f);
+            destory.transform.position = other.transform.position;
+            Destroy(other.gameObject);
+            GameObject.Instantiate(destory); 
+            Destroy(destory, 1.0f);
+            
         }
     } 
    
