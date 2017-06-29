@@ -5,6 +5,8 @@ using UnityEngine;
 public class AddColor : MonoBehaviour {
     public Camera camera;
     public GameObject Eggcolor;
+    public GameObject _Egg;
+    GameObject Egg;
     GameObject egg;
 	// Use this for initialization
 	//void Start () {
@@ -25,8 +27,10 @@ public class AddColor : MonoBehaviour {
                 if (hit.collider.transform.Equals(this.transform))
                 {
                     if (egg != null) return;
-                    egg=Instantiate(Eggcolor);
-                    StartCoroutine("DestoryEggcolor", 1.0F);
+                    this.transform.Rotate(0, 0, 35);
+                    Egg = Instantiate(_Egg);
+                    StartCoroutine("CreateEggcolor", 0.8F);
+                    StartCoroutine("DestoryEggcolor", 2.0F);
                 }
             }
         }
@@ -34,7 +38,16 @@ public class AddColor : MonoBehaviour {
     }
 
     IEnumerator DestoryEggcolor(float waitTime) {
+
         yield return new WaitForSeconds(waitTime);
+            this.transform.Rotate(0,0,325);
             Destroy(egg);
+            Destroy(Egg);
+    }
+    IEnumerator CreateEggcolor(float waitTime)
+    {
+
+        yield return new WaitForSeconds(waitTime);
+        egg = Instantiate(Eggcolor);
     }
 }
