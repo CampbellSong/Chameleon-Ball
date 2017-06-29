@@ -6,11 +6,8 @@ public class REDScript : MonoBehaviour {
     public Color _color;
     public GameObject ball;
     public MeshRenderer meshRenderer;
-<<<<<<< HEAD
     public GameObject destory;
     //public MeshRenderer ballRenderer;
-=======
->>>>>>> 80466d80d1484c0ccd644df3494face84dd2c358
     public Light light;
     public Camera camera;
     bool _bSwitch=false;
@@ -42,21 +39,17 @@ public class REDScript : MonoBehaviour {
     
     private void OnTriggerStay(Collider other)
     {
-<<<<<<< HEAD
         if (other.gameObject.GetComponent<Renderer>().material.color != meshRenderer.material.color)
         {
             destory.transform.position = other.transform.position;
             Destroy(other.gameObject);
-            GameObject.Instantiate(destory); 
+            GameObject.Instantiate(destory);
             Destroy(destory, 1.0f);
+        }
             
-=======
-        if (collision.gameObject.GetComponent<Renderer>().material.color != meshRenderer.material.color)
+        if (other.gameObject.GetComponent<Renderer>().material.color != meshRenderer.material.color)
         {
-            Destroy(collision.gameObject, .5f);
->>>>>>> 80466d80d1484c0ccd644df3494face84dd2c358
+            Destroy(other.gameObject, .5f);
         }
     } 
-   
-    
 }

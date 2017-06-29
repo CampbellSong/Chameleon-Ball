@@ -17,12 +17,8 @@ public class InstantiateBall : MonoBehaviour {
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit)) {
                 if (hit.collider.transform.Equals(this.transform)) {
-<<<<<<< HEAD
                     Object.Instantiate(ball);
-                    
-=======
-                    GameObject newball = Instantiate(ball);
->>>>>>> 80466d80d1484c0ccd644df3494face84dd2c358
+                    //GameObject newball = Instantiate(ball);
                 }
             }
         }
