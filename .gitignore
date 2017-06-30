@@ -29,7 +29,4 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
-<<<<<<< HEAD
-=======
-
->>>>>>> 3909b60619874fa539fc2c5c0a68ba5b3ed7272c
+Assets/Trap/BlackScript.cs

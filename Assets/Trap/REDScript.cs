@@ -49,7 +49,7 @@ public class REDScript : MonoBehaviour {
             
         if (other.gameObject.GetComponent<Renderer>().material.color != meshRenderer.material.color)
         {
-            Destroy(other.gameObject, .5f);
+            Destroy(other.gameObject, 0.5f);
         }
     } 
 }
