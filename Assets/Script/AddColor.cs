@@ -27,7 +27,7 @@ public class AddColor : MonoBehaviour {
                 if (hit.collider.transform.Equals(this.transform))
                 {
                     if (egg != null) return;
-                    this.transform.Rotate(0, 0, 35);
+                    //this.transform.Rotate(0, 0, 35);
                     Egg = Instantiate(_Egg);
                     StartCoroutine("CreateEggcolor", 0.8F);
                     StartCoroutine("DestoryEggcolor", 2.0F);
@@ -40,7 +40,7 @@ public class AddColor : MonoBehaviour {
     IEnumerator DestoryEggcolor(float waitTime) {
 
         yield return new WaitForSeconds(waitTime);
-            this.transform.Rotate(0,0,325);
+           // this.transform.Rotate(0,0,325);
             Destroy(egg);
             Destroy(Egg);
     }
