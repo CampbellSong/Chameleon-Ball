@@ -13,4 +13,10 @@ public class BallScript : MonoBehaviour {
 	void Update () {
         
 	}
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == GameObject.FindGameObjectWithTag("knif").tag) {
+
+        }
+    } 
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class InstantiateBall : MonoBehaviour {
     public GameObject ball;
     public Camera camera;
+    GameObject _ball;
 	// Use this for initialization
 	void Start () {
 		
@@ -17,7 +18,8 @@ public class InstantiateBall : MonoBehaviour {
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit)) {
                 if (hit.collider.transform.Equals(this.transform)) {
-                    Object.Instantiate(ball);
+                    if (_ball != null) return;
+                    _ball = Instantiate(ball);
                     //GameObject newball = Instantiate(ball);
                 }
             }
