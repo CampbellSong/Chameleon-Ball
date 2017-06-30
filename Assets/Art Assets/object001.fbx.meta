@@ -1,0 +1,163 @@
+fileFormatVersion: 2
+guid: d49e4f267d79a514d82f77d084f15cdc
+timeCreated: 1498789096
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: ball
+    100002: board
+    100004: bowl
+    100006: egg4
+    100008: flour
+    100010: jar
+    100012: jar02
+    100014: jar_big
+    100016: knife
+    100018: //RootNode
+    100020: powersupply
+    100022: shovel
+    100024: spoon01
+    100026: spoon02
+    100028: spoon_small
+    100030: spotlight
+    100032: toaster
+    100034: tomato_sauce
+    400000: ball
+    400002: board
+    400004: bowl
+    400006: egg4
+    400008: flour
+    400010: jar
+    400012: jar02
+    400014: jar_big
+    400016: knife
+    400018: //RootNode
+    400020: powersupply
+    400022: shovel
+    400024: spoon01
+    400026: spoon02
+    400028: spoon_small
+    400030: spotlight
+    400032: toaster
+    400034: tomato_sauce
+    2300000: ball
+    2300002: board
+    2300004: bowl
+    2300006: egg4
+    2300008: flour
+    2300010: jar
+    2300012: jar02
+    2300014: jar_big
+    2300016: knife
+    2300018: powersupply
+    2300020: shovel
+    2300022: spoon01
+    2300024: spoon02
+    2300026: spoon_small
+    2300028: spotlight
+    2300030: toaster
+    2300032: tomato_sauce
+    3300000: ball
+    3300002: board
+    3300004: bowl
+    3300006: egg4
+    3300008: flour
+    3300010: jar
+    3300012: jar02
+    3300014: jar_big
+    3300016: knife
+    3300018: powersupply
+    3300020: shovel
+    3300022: spoon01
+    3300024: spoon02
+    3300026: spoon_small
+    3300028: spotlight
+    3300030: toaster
+    3300032: tomato_sauce
+    4300000: tomato_sauce
+    4300002: spoon01
+    4300004: spoon02
+    4300006: shovel
+    4300008: knife
+    4300010: toaster
+    4300012: powersupply
+    4300014: jar
+    4300016: jar02
+    4300018: egg4
+    4300020: jar_big
+    4300022: bowl
+    4300024: spoon_small
+    4300026: flour
+    4300028: board
+    4300030: spotlight
+    4300032: ball
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
