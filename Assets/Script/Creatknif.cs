@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AddColor : MonoBehaviour {
+public class Creatknif : MonoBehaviour {
     public Camera camera;
     public GameObject Eggcolor;
-    public GameObject _Egg;
-    GameObject Egg;
+    public GameObject _knif;
+    GameObject Knif;
     GameObject egg;
 	// Use this for initialization
 	//void Start () {
@@ -28,7 +28,7 @@ public class AddColor : MonoBehaviour {
                 {
                     if (egg != null) return;
                     //this.transform.Rotate(0, 0, 35);
-                    Egg = Instantiate(_Egg);
+                    Knif = Instantiate(_knif);
                     StartCoroutine("CreateEggcolor", 0.8F);
                     StartCoroutine("DestoryEggcolor", 2.0F);
                 }
@@ -42,7 +42,7 @@ public class AddColor : MonoBehaviour {
         yield return new WaitForSeconds(waitTime);
            // this.transform.Rotate(0,0,325);
             Destroy(egg);
-            Destroy(Egg);
+            Destroy(Knif);
     }
     IEnumerator CreateEggcolor(float waitTime)
     {
