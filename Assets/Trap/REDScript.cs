@@ -39,6 +39,7 @@ public class REDScript : MonoBehaviour {
     
     private void OnTriggerStay(Collider other)
     {
+        Debug.Log("111");
         if (other.gameObject.GetComponent<Renderer>().material.color != meshRenderer.material.color)
         {
             destory.transform.position = other.transform.position;

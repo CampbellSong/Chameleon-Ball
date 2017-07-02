@@ -41,7 +41,6 @@ public class Knif1 : MonoBehaviour
             Instantiate(obj2);
             obj1.transform.position = GameObject.FindGameObjectWithTag("Ball").transform.position;
             obj2.transform.position = GameObject.FindGameObjectWithTag("Ball").transform.position;
-
             Destroy(GameObject.FindGameObjectWithTag("Ball"));
 
 

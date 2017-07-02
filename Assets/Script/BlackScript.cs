@@ -28,7 +28,7 @@ public class BlackScript : MonoBehaviour {
                 if (hit.collider.transform.Equals(this.transform))
                 {
                     _bSwitch = !_bSwitch;
-                    _color = _bSwitch? Color.black:Color.red;                 
+                //    _color = _bSwitch? Color.black:Color.red;                 
                     meshRenderer.material.color = _color;
                     light.color = _color;
      
@@ -39,12 +39,12 @@ public class BlackScript : MonoBehaviour {
     
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.GetComponent<Renderer>().material.color != meshRenderer.material.color)
+        if (other.gameObject.GetComponent<Renderer>().material.color != this._color)
         {
-            destory.transform.position = other.transform.position;
+            //destory.transform.position = other.transform.position;
             Destroy(other.gameObject);
-            GameObject.Instantiate(destory);
-            Destroy(destory, 1.0f);
+           // GameObject.Instantiate(destory);
+           // Destroy(destory, 1.0f);
         }
             
         if (other.gameObject.GetComponent<Renderer>().material.color != meshRenderer.material.color)

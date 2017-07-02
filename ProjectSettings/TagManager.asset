@@ -10,6 +10,7 @@ TagManager:
   - smallball
   - samllball2
   - smallball1
+  - platform
   layers:
   - Default
   - TransparentFX

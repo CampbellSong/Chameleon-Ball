@@ -7,6 +7,9 @@ public class Dustbin : MonoBehaviour
     public Camera camera;
     public GameObject destory;
     GameObject _destory;
+    public GameObject obj;
+
+    private bool isOpen;
     // Use this for initialization
     //void Start () {
     //       StartCoroutine();
@@ -29,7 +32,7 @@ public class Dustbin : MonoBehaviour
                 {
                     if (this.transform.rotation.z != 0) return;
                         this.transform.Rotate(0,0,90);
-                    
+                    isOpen = true;
                     StartCoroutine("Rotate", 1F);
                 }
             }
@@ -45,9 +48,14 @@ public class Dustbin : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        destory.transform.position = GameObject.FindGameObjectWithTag("smallball1").transform.position;
-        Destroy(GameObject.FindGameObjectWithTag("smallball1"));
-        Instantiate(_destory);
+        //destory.transform.position = GameObject.FindGameObjectWithTag("smallball1").transform.position;
+        if (isOpen)
+        {
+            Destroy(collision.gameObject);
+            Instantiate(obj);
+        }
+        
+    //    Instantiate(_destory);
 
     } 
 }

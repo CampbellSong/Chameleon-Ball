@@ -18,8 +18,6 @@ public class Eggcolorchange : MonoBehaviour {
 
     private void OnTriggerEnter(Collider collision)
     {
-   
-        Debug.Log("111");
         if (collision.gameObject.GetComponent<Renderer>().material.color != this._color) {
             collision.gameObject.GetComponent<Renderer>().material.color = this._color;
         }
