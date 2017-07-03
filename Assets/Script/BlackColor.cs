@@ -30,7 +30,6 @@ public class BlackColor : MonoBehaviour
                     {
                         if (egg != null) return;
                         this.transform.Rotate(0, 0, 35);
-                        Egg = Instantiate(_Black);
                         StartCoroutine("CreateEggcolor", 0.8F);
                         StartCoroutine("DestoryEggcolor", 2.0F);
                     }
