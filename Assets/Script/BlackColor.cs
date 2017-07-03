@@ -6,7 +6,7 @@ public class BlackColor : MonoBehaviour
 {
     public Camera camera;
     public GameObject Blackcolor;
-    public GameObject _Black;
+    public GameObject sauceParticle;
     GameObject Egg;
     GameObject egg;
     // Use this for initialization
@@ -31,8 +31,10 @@ public class BlackColor : MonoBehaviour
                         if (egg != null) return;
                         this.transform.Rotate(0, 0, 35);
                         StartCoroutine("CreateEggcolor", 0.8F);
-                        StartCoroutine("DestoryEggcolor", 2.0F);
-                    }
+                        StartCoroutine("DestoryEggcolor", 4.0F);
+                        Instantiate(sauceParticle);
+                        
+                     }
                 }
             }
 
@@ -52,4 +54,5 @@ public class BlackColor : MonoBehaviour
             yield return new WaitForSeconds(waitTime);
             egg = Instantiate(Blackcolor); 
         }
-    }
+
+}

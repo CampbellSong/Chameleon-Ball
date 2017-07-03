@@ -11,6 +11,8 @@ public class REDScript : MonoBehaviour {
     public Light light;
     public Camera camera;
     bool _bSwitch=false;
+
+    public GameObject playAgain;
 	// Use this for initialization
 	void Start () {
        // meshRenderer.material.color = _color;
@@ -39,18 +41,20 @@ public class REDScript : MonoBehaviour {
     
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log("111");
+      //  Debug.Log("111");
         if (other.gameObject.GetComponent<Renderer>().material.color != meshRenderer.material.color)
         {
             destory.transform.position = other.transform.position;
             Destroy(other.gameObject);
             GameObject.Instantiate(destory);
             Destroy(destory, 1.0f);
+            
         }
             
         if (other.gameObject.GetComponent<Renderer>().material.color != meshRenderer.material.color)
         {
             Destroy(other.gameObject, 0.5f);
+            playAgain.SetActive(true);
         }
     } 
 }
