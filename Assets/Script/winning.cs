@@ -17,5 +17,6 @@ public class winning : MonoBehaviour {
     private void OnTriggerEnter(Collider collision)
     {
         Winning.SetActive(true);
+        Destroy(collision.gameObject);
     }
 }
